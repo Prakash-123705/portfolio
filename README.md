@@ -1,34 +1,22 @@
-# Gnanaprakash Pathagunta - Portfolio 🌐
+# 🌐 Gnanaprakash's Portfolio
 
-Welcome to my personal portfolio website! Built using HTML and CSS.
+This is my personal portfolio website built using HTML and CSS.
 
-## 📸 Preview
+## 🔗 Live Website
 
-![me](https://github.com/user-attachments/assets/ba5398a8-9cdd-454c-95a0-d52234899b92)
+[https://Prakash-123705.github.io/portfolio/](https://Prakash-123705.github.io/portfolio/)
 
+## 📄 About
 
-## 📄 About Me
+This portfolio includes details about my background, skills, and projects.
 
-I'm a passionate web developer currently pursuing my B.Tech at VITAP University, Amaravathi. I love working on frontend technologies.
-
-## 🛠️ Skills
-
+### 🚀 Tech Stack
 - HTML
 - CSS
-- JavaScript (Basics)
-- Python (Basics)
-- Java (Basics)
-
-## 📁 Projects
-
-| Project            | Description                        |
-|--------------------|------------------------------------|
-| Portfolio Website  | Built using HTML, CSS              |
-| Bouldering Website | Created with HTML and CSS          |
 
 ## 📬 Contact
 
-- 📧 gnanaprakashpathagunta@gmail.com  
+- 📧 Email: gnanaprakashpathagunta@gmail.com  
 - 💼 [LinkedIn](https://www.linkedin.com/in/gnanaprakash-pathagunta-94481330b)
 
 ---
