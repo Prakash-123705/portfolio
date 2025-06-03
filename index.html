@@ -2,77 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="index.css" />
+  <link href="index.css" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <h1>Welcome to my Portfolio</h1>
+    <h1>Gnanaprakash Pathagunta</h1>
+    <p>Frontend Developer</p>
     <nav>
-      <a href="#about" class="button">About</a>
-      <a href="#skills" class="button">Skills</a>
-      <a href="#projects" class="button">Projects</a>
-      <a href="#contact" class="button">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h1>Gnanaprakash Pathagunta</h1>
-      <img src="me.jpg" alt="Gnanaprakash's photo" />
-      <p>I am a passionate web developer focused on frontend technologies.</p>
-      <p>I am currently pursuing my B.Tech at VITAP University, Amaravathi.</p>
+    <section id="about" class="about" aria-label="About Me">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Gnanaprakash, a frontend developer with a passion for creating beautiful and user-friendly web applications.
+        I enjoy working with HTML, CSS, and JavaScript to bring designs to life and enhance user experiences.
+        I am constantly learning new technologies and improving my skills to stay up-to-date in the ever-evolving world of web development.
+      </p>
     </section>
 
-    <section id="skills">
-      <h1>My Skills</h1>
-      <ul>
-        <li>Python (Basics)</li>
-        <li>Java (Basics)</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript (Basics)</li>
-      </ul>
+    <section id="projects" aria-label="My Projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <h3>Portfolio Website</h3>
+          <p>A modern and responsive portfolio site showcasing my work, built with HTML, CSS, and JavaScript.</p>
+          <a href="https://github.com/Prakash-123705/portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+        </article>
+    
+        <article class="project-card" tabindex="0">
+          <h3>To-do List</h3>
+          <p>A full-featured blogging platform with rich text editing, authentication, and serverless backend.</p>
+          <a href="https://github.com/Prakash-123705/Todo-list" target="_blank" rel="noopener noreferrer">View Code</a>
+        </article>
+      </div>
     </section>
 
-    <section id="projects">
-      <h1>My Projects</h1>
-      <table border="1" cellpadding="10">
-        <thead>
-          <tr>
-            <th>Project</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Portfolio Website</td>
-            <td>Built using HTML, CSS, and JavaScript.</td>
-          </tr>
-          <tr>
-            <td>Bouldering Website</td>
-            <td>Created using HTML and CSS.</td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="skills" aria-label="My Skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">React</span>
+        <span class="skill-item">HTML</span>
+        <span class="skill-item">CSS</span>
+        <span class="skill-item">SQL</span>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">Java</span>
+      </div>
     </section>
 
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <p>Email: <a href="mailto:gnanaprakashpathagunta@gmail.com">gnanaprakashpathagunta@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/gnanaprakash-pathagunta-94481330b" target="_blank">My LinkedIn Profile</a></p>
+    <section id="contact" aria-label="Contact Me">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="handleContactForm(event)" aria-describedby="formMessage">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="Your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="formMessage" role="alert" aria-live="polite" style="margin-top:10px;"></p>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Gnanaprakash Pathagunta. All rights reserved.</p>
-    <p>
-      Follow me:
-      <a href="https://www.linkedin.com/in/gnanaprakash-pathagunta-94481330b" target="_blank">LinkedIn</a>
-    </p>
+    &copy; 2025 Gnanaprakash Pathagunta. Built with passion.
   </footer>
 
+  <script src="index.js"></script>
 </body>
 </html>
+
