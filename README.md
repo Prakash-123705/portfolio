@@ -2,7 +2,7 @@ Portfolio Website - Gnanaprakash Pathagunta
 Welcome to my personal portfolio website! This project shows my skills, projects, and contact info as a frontend developer.
 
 🚀 Live Demo
-View the live site here: [https://prakash-123705.github.io/portfolio/]
+View the live site here: [https://portfolio-delta-topaz-17.vercel.app/]
 
 📁 Project Structure
 index.html - Main HTML file
