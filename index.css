@@ -6,9 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 160px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0f2027;
-  /* fallback for old browsers */
   background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
   color: #f0f0f0;
 }
@@ -18,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px 40px;
+  padding: 140px 20px 40px;
 }
 
 a {
@@ -40,17 +39,23 @@ h3 {
 main {
   max-width: 900px;
   width: 100%;
-  background: rgba(255 255 255 / 0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 30px 40px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
-  border-bottom: 2px solid #58a6ff33;
+  background: linear-gradient(to right, #203a43, #2c5364);
+  border-bottom: 1px solid #58a6ff55;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -82,7 +87,7 @@ section {
 }
 
 .project-card {
-  background: rgba(255 255 255 / 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 15px 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
@@ -207,28 +212,22 @@ footer {
   font-size: 0.9rem;
 }
 
-/* New styles for Certifications section */
 #certifications ul {
   list-style: none;
-  /* Remove bullet points */
   padding: 0;
   display: grid;
-  /* Use grid for better layout of certificates */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  /* Adjust column width as needed */
   gap: 25px;
-  /* Space between certificate items */
 }
 
 #certifications li {
-  background: rgba(255 255 255 / 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center content within the card */
   text-align: center;
 }
 
@@ -245,29 +244,20 @@ footer {
 
 .certificate-thumbnail {
   max-width: 100%;
-  /* Ensure image fits container */
   height: auto;
   display: block;
-  /* Remove extra space below image */
   margin-top: 10px;
-  /* Space between text and image */
   border: 1px solid #58a6ff;
-  /* A nice border */
   border-radius: 5px;
-  /* Slightly rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* Subtle shadow */
   transition: transform 0.2s ease;
-  /* Smooth hover effect */
 }
 
 .certificate-thumbnail:hover {
   transform: scale(1.02);
-  /* Slightly enlarge on hover */
 }
 
 #certifications li a:not(.certificate-thumbnail) {
-  /* Style for text links to PDFs */
   display: inline-block;
   margin-top: 10px;
   font-weight: 600;
@@ -281,19 +271,4 @@ footer {
 #certifications li a:not(.certificate-thumbnail):hover {
   background: #58a6ff;
   color: #0f2027;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 20px 10px 30px;
-  }
-
-  main {
-    padding: 25px 20px;
-  }
-
-  nav a {
-    margin: 0 10px;
-    font-size: 1rem;
-  }
 }
