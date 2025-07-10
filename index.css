@@ -300,6 +300,7 @@ footer p {
 
   section {
     padding: 1.5rem 0.5rem;
+    scroll-margin-top: 56px;
   }
 
   .cert-card img {
