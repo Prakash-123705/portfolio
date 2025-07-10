@@ -3,152 +3,144 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Gnanaprakash Pathagunta – Aspiring Web Developer with expertise in frontend technologies and real-world project experience.">
-  <meta name="author" content="Gnanaprakash Pathagunta">
-  <title>My Portfolio</title>
-  <link href="index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Gnanaprakash Pathagunta" />
+  <meta name="description" content="Portfolio of Gnanaprakash Pathagunta – Web Developer" />
+  <title>Gnanaprakash Pathagunta | Web Developer</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Gnanaprakash Pathagunta</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
-    <h1>Gnanaprakash Pathagunta</h1>
-    <p>Web Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="live-link">
-      <a href="https://portfolio-delta-topaz-17.vercel.app/" target="_blank" class="live-btn">Live Portfolio</a>
+    <img src="Gnanaprakash.jpg" alt="Gnanaprakash Pathagunta Avatar" class="profile-avatar" />
+    <h1>Hi, I'm Gnanaprakash Pathagunta 👋</h1>
+    <h2>Frontend Developer | HTML • CSS • JavaScript • React</h2>
+    <p>I create responsive websites and interactive web apps that solve real-world problems. Passionate about clean UI,
+      accessibility, and performance-driven development.</p>
+    <div class="buttons">
+      <a href="https://drive.google.com/file/d/1wHSmXjERhLYG6Ax41NP6Z7cwDOJCAA3T/view?usp=sharing" target="_blank">📄
+        Resume</a>
+      <a href="https://github.com/Prakash-123705" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/gnanaprakash-pathagunta-94481330b/" target="_blank">🔗 LinkedIn</a>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="about" aria-label="About Me">
-      <h2>About Me</h2>
-      <p>
-        Aspiring web developer with a strong foundation in front-end technologies and a passion for creating
-        responsive and user-friendly web applications. Eager to contribute to real-world projects
-        and grow within a dynamic and collaborative team environment. I enjoy turning creative ideas into
-        functional interfaces using HTML, CSS, and JavaScript. I'm constantly learning new tools and frameworks like
-        React to stay ahead in the fast-moving tech world. Whether it's designing a simple landing page or coding
-        dynamic user interactions, I love bringing web experiences to life. My goal is to grow as a full-stack
-        developer.
-      </p>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a final-year Computer Science student and frontend developer skilled in building modern, user-friendly
+      websites and apps. I’ve worked on projects like a Conference Ticket Generator and FAQ App using HTML, CSS,
+      JavaScript, and React.</p>
+    <p style="margin-top: 1rem; font-weight: bold; text-align: center; color: var(--accent);">🔍 Open to internship or
+      entry-level web development roles. Let's connect!</p>
+  </section>
 
-    <section id="projects" aria-label="My Projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card" tabindex="0">
-          <h3>Conference Ticket Generator</h3>
-          <p>Dynamic form to collect user input and generate printable conference tickets. Uses DOM manipulation and HTML2PDF for downloads.</p>
-          <a href="https://prakash-123705.github.io/Conference-ticket-generator/" target="_blank">Live Demo</a> |
-          <a href="https://github.com/Prakash-123705/Conference-ticket-generator" target="_blank">View Code</a>
-        </article>
-        <article class="project-card" tabindex="0">
-          <h3>Character Counter</h3>
-          <p>Counts characters, words, and sentences in real-time using JavaScript. Built with HTML, CSS, and JS.</p>
-          <a href="https://prakash-123705.github.io/Charecter-counter/" target="_blank">Live Demo</a> |
-          <a href="https://github.com/Prakash-123705/Charecter-counter" target="_blank">View Code</a>
-        </article>
-        <article class="project-card" tabindex="0">
-          <h3>FAQ Accordion</h3>
-          <p>Interactive FAQ component with expand/collapse behavior using HTML, CSS and JS.</p>
-          <a href="https://faq-query.vercel.app/" target="_blank">Live Demo</a> |
-          <a href="https://github.com/Prakash-123705/faq-query" target="_blank">View Code</a>
-        </article>
-        <article class="project-card" tabindex="0">
-          <h3>Job Application Form</h3>
-          <p>Form with HTML5 structure and validations, simulating a real-world application process.</p>
-          <a href="https://prakash-123705.github.io/Job-Application-Form/" target="_blank">Live Demo</a> |
-          <a href="https://github.com/Prakash-123705/Job-Application-Form" target="_blank">View Code</a>
-        </article>
-        <article class="project-card" tabindex="0">
-          <h3>Intro Component with Sign-up Form</h3>
-          <p>Responsive sign-up component design using modern CSS and semantic HTML.</p>
-          <a href="https://prakash-123705.github.io/Intro-component-with-sign-up-form/" target="_blank">Live Demo</a> |
-          <a href="https://github.com/Prakash-123705/Intro-component-with-sign-up-form" target="_blank">View Code</a>
-        </article>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🎟️ Conference Ticket Generator</h3>
+      <div class="project-buttons">
+        <a href="https://prakash-123705.github.io/Ticket-generator/" target="_blank" class="btn">Live Site</a>
+        <a href="https://github.com/Prakash-123705/Conference-ticket-generator" target="_blank"
+          class="btn-outline">GitHub</a>
       </div>
-    </section>
+      <p>Generate tickets with QR code, print option, and downloadable PDF. Simulates real-world use cases.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript, html2pdf.js, qrcode.js</p>
+    </div>
 
-    <section id="skills" aria-label="My Skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span class="skill-item">JavaScript</span>
-        <span class="skill-item">React</span>
-        <span class="skill-item">HTML</span>
-        <span class="skill-item">CSS</span>
-        <span class="skill-item">SQL</span>
-        <span class="skill-item">Python</span>
-        <span class="skill-item">Java</span>
-        <span class="skill-item">Git</span>
-        <span class="skill-item">GitHub</span>
-        <span class="skill-item">VS Code</span>
-        <span class="skill-item">Responsive Design</span>
-        <span class="skill-item">Team Collaboration</span>
-        <span class="skill-item">Communication</span>
+    <div class="project">
+      <h3>❓ FAQ Query App</h3>
+      <div class="project-buttons">
+        <a href="https://faq-query.vercel.app/" target="_blank" class="btn">Live Site</a>
+        <a href="https://github.com/Prakash-123705/faq-query" target="_blank" class="btn-outline">GitHub</a>
       </div>
-    </section>
+      <p>Accordion-based FAQ UI with smooth transitions and localStorage for remembering open states.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+    </div>
 
-    <section id="experience" aria-label="Experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Full Stack Developer – Intern (Remote)</h3>
-        <p><strong>Company:</strong> Zidio Development</p>
-        <p><strong>Duration:</strong> June 2025 – Present</p>
-        <p>Collaborated with cross-functional teams to build scalable and responsive web applications. Worked on frontend interfaces using React, backend integration, and deployed features to production using Git workflows.</p>
-      </article>
-      <article>
-        <h3>Frontend Intern – Summer Internship</h3>
-        <p><strong>Project:</strong> Fitness Tracker App</p>
-        <p>Built responsive UI with HTML, CSS, JavaScript and integrated frontend with backend APIs.</p>
-        <a href="https://github.com/Prakash-123705/Fitness-Tracker" target="_blank">View Code</a>
-      </article>
-    </section>
+    <div class="project">
+      <h3>✏️ Character Counter</h3>
+      <div class="project-buttons">
+        <a href="https://prakash-123705.github.io/Charecter-counter/" target="_blank" class="btn">Live Site</a>
+        <a href="https://github.com/Prakash-123705/Charecter-counter" target="_blank" class="btn-outline">GitHub</a>
+      </div>
+      <p>Real-time character, word, and sentence counter useful for content creators.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
 
-    <section id="certifications" aria-label="My Certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>
-          <h3>Generative AI Professional – Oracle Cloud Infrastructure</h3>
-          <p>Certified: July 7, 2025 | Valid Until: July 7, 2027</p>
-          <img src="gen-ai.png" alt="Oracle Generative AI Certificate" class="certificate-thumbnail">
-        </li>
-        <li>
-          <h3>Full Stack Development – Imarticus Learning (Internship)</h3>
-          <p>June 6, 2024 – July 11, 2024</p>
-          <img src="fullstack development.png" alt="Full Stack Certificate" class="certificate-thumbnail">
-        </li>
-        <li>
-          <h3>Python 101 for Data Science – IBM Cognitive Class</h3>
-          <p>Certified: May 30, 2024</p>
-          <img src="python-ibm.png" alt="IBM Python Certificate" class="certificate-thumbnail">
-        </li>
-      </ul>
-    </section>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+      <h3>Zidio Development</h3>
+      <p><strong>Role:</strong> Frontend Developer (Intern)</p>
+      <p><strong>Duration:</strong> June 25, 2025 – July 25, 2025</p>
+      <p>Currently working on modern web solutions, collaborating with a dynamic team to build responsive and
+        user-friendly interfaces using the latest frontend technologies.</p>
+    </div>
+  </section>
 
-    <section id="contact" aria-label="Contact Me">
-      <h2>Contact</h2>
-      <ul>
-        <li><h5>Email:</h5><a href="mailto:gnanaprakashpathagutna.email@example.com">gnanaprakashpathagutna.email@example.com</a></li>
-        <li><h5>LinkedIn:</h5><a href="https://www.linkedin.com/in/gnanaprakash-pathagunta-94481330b/" target="_blank">LinkedIn Profile</a></li>
-        <li><h5>GitHub:</h5><a href="https://github.com/Prakash-123705" target="_blank">GitHub Profile</a></li>
-        <li><h5>Resume:</h5><a href="updated resume.pdf" target="_blank">Download Resume</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java</p>
+    <p><strong>Libraries:</strong> React.js, Bootstrap</p>
+    <p><strong>Tools:</strong> Git, GitHub, VS Code, Chrome DevTools</p>
+    <p><strong>Soft Skills:</strong> Problem Solving, Teamwork, Communication</p>
+  </section>
 
-  <footer>
-    &copy; 2025 Gnanaprakash Pathagunta. Built with passion.
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card"><img src="responsive web design.png" alt="Responsive Web Design Certificate">
+        <p>Responsive Web Design – FreeCodeCamp – 2025</p>
+      </div>
+      <div class="cert-card"><img src="frontend development certificate.png" alt="Frontend Development Certificate">
+        <p>Frontend Development – OneRoadmap – 2025</p>
+      </div>
+      <div class="cert-card"><img src="fullstack development.png" alt="Full Stack Development Certificate">
+        <p>FullStack Development – Imarticus Learning – 2024</p>
+      </div>
+      <div class="cert-card"><img src="Java essentials certificate by infosys.png" alt="Java Essentials Certificate">
+        <p>Java Essentials – Infosys – 2023</p>
+      </div>
+      <div class="cert-card"><img src="python-ibm.png" alt="Python Certificate">
+        <p>Python – IBM – 2023</p>
+      </div>
+      <div class="cert-card"><img src="Gen ai.png" alt="Generative AI Certificate">
+        <p>Gen AI – Oracle – 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:gnanaprakashpathagunta@gmail.com">gnanaprakashpathagunta@gmail.com</a></p>
+    <p>👋 I'm actively looking for internship or entry-level frontend developer roles. Let’s connect and build something
+      amazing together!</p>
+    <p>&copy; 2025 Gnanaprakash Pathagunta. All rights reserved.</p>
   </footer>
 
-  <script src="index.js"></script>
 </body>
 
 </html>
